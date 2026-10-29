@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel | OnTime</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;600&family=Sora:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=111">
+<link rel="stylesheet" href="admin.css?v=7">
+</head>
+<body class="adm">
+<main class="adm__gate" id="gate">
+  <section id="setup" class="adm__box adm__box--narrow" hidden>
+    <a href="../" class="adm__logo adm__logo--c" aria-label="Voltar ao site"><img src="../assets/logo.svg" alt="OnTime" height="36"></a>
+    <p class="adm__note">Painel indisponível. Tente novamente mais tarde.</p>
+  </section>
+
+  <section id="login" class="adm__box adm__box--narrow" hidden>
+    <a href="../" class="adm__logo adm__logo--c" aria-label="Voltar ao site"><img src="../assets/logo.svg" alt="OnTime" height="36"></a>
+    <h1>Entrar</h1>
+    <form id="login-form" autocomplete="on">
+      <label>E-mail<input type="email" id="email" required autocomplete="username"></label>
+      <label>Senha<input type="password" id="password" required autocomplete="current-password"></label>
+      <p class="adm__msg" id="login-msg" role="alert"></p>
+      <button type="submit" class="btn btn--grad" id="login-btn">Entrar</button>
+    </form>
+    <p class="adm__back"><a href="../">&larr; Voltar ao site</a></p>
+  </section>
+</main>
+
+<main class="adm__wrap">
+  <header class="adm__top">
+    <a href="../" class="adm__logo" aria-label="Voltar ao site"><img src="../assets/logo.svg" alt="OnTime" height="32"></a>
+    <div class="adm__user" id="user" hidden><span id="user-mail"></span><button type="button" class="adm__link" id="logout">Sair</button></div>
+  </header>
+
+  <section id="panel" hidden>
+    <div class="adm__head adm__head--row">
+      <h1>Vídeos do site</h1>
+      <button type="button" class="btn btn--grad" id="add-btn">Adicionar vídeo</button>
+    </div>
+    <div class="adm__bar">
+      <input type="search" id="search" placeholder="Buscar por nome ou código" aria-label="Buscar vídeos">
+      <div class="adm__chips" id="chips" role="group" aria-label="Filtrar por onde aparece"></div>
+    </div>
+    <p class="adm__warn" id="home-warn" hidden></p>
+    <div class="adm__grid" id="list"></div>
+  </section>
+</main>
+
+<dialog id="add-dlg" class="adm__dlg" aria-labelledby="add-title">
+  <form id="add-form" method="dialog">
+    <div class="adm__dlghead"><h2 id="add-title">Adicionar vídeo</h2><button type="button" class="adm__x" id="add-close" aria-label="Fechar">&times;</button></div>
+    <label>Arquivo do vídeo (.mp4)<input type="file" id="add-file" accept="video/mp4,video/*"></label>
+    <div class="adm__prev" id="add-prev" hidden><img id="add-poster" alt="Capa do vídeo"><span id="add-meta"></span></div>
+    <details class="adm__alt"><summary>Já está hospedado em outro lugar?</summary>
+      <label>Endereço do vídeo<input type="text" id="add-url" placeholder="https://..."></label>
+      <label>Endereço da capa<input type="text" id="add-purl" placeholder="https://..."></label>
+      <label>Duração em segundos<input type="number" id="add-dur" min="1" placeholder="30"></label>
+    </details>
+    <label>Nome<input type="text" id="add-name" maxlength="80" placeholder="Nome que aparece no cartão"></label>
+    <label>Descrição<input type="text" id="add-sub" maxlength="120" placeholder="Texto pequeno abaixo do nome"></label>
+    <label>Onde aparece<select id="add-cat"></select></label>
+    <label class="adm__switch"><input type="checkbox" id="add-home"><span>Mostrar na home</span></label>
+    <p class="adm__msg" id="add-msg" role="alert"></p>
+    <div class="adm__dlgacts"><button type="button" class="adm__cancel" id="add-cancel">Cancelar</button><button type="submit" class="btn btn--grad" id="add-save">Publicar</button></div>
+  </form>
+</dialog>
+<div class="adm__toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="../supabase-config.js?v=2"></script>
+<script src="admin.js?v=7"></script>
+</body>
+</html>

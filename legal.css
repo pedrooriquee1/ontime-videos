@@ -1,0 +1,51 @@
+.skip{position:fixed;left:16px;top:-80px;z-index:100;background:var(--green);color:#050607;font:700 14px var(--f-body);padding:12px 18px;border-radius:8px;transition:top .2s}
+.skip:focus{top:16px}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:4px}
+main:focus{outline:none}
+
+.footer__legal{display:flex;flex-wrap:wrap;gap:8px 24px}
+.footer__legal a,.footer__legal button{color:#64748b;font:400 12px var(--f-body);background:none;border:0;cursor:pointer;padding:0}
+.footer__legal a:hover,.footer__legal button:hover{color:#fff;text-decoration:underline}
+.footer__bottom{align-items:center}
+
+.legal{max-width:820px;padding:96px 0 40px}
+.legal h1{font:300 44px/1.1 var(--f-head);letter-spacing:-1.4px;color:var(--ink);margin:16px 0 12px}
+.legal__meta{color:#64748b;font:400 14px var(--f-body);margin-bottom:28px}
+.legal__aviso{border:1px solid rgba(31,213,118,.35);background:rgba(31,213,118,.06);color:var(--sub);font:400 14px/1.6 var(--f-body);padding:16px 18px;border-radius:10px;margin-bottom:40px}
+.legal h2{font:600 22px/1.3 var(--f-head);color:var(--ink);margin:40px 0 12px}
+.legal p,.legal li{color:var(--sub);font:400 16px/1.75 var(--f-body)}
+.legal p{margin-bottom:14px}
+.legal ul{margin:0 0 14px 22px;list-style:disc}
+.legal li{margin-bottom:8px}
+.legal a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.legal strong{color:#fff;font-weight:600}
+.legal code{font:400 13px var(--f-mono);background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px;color:#e9f2f1}
+mark.ph{background:rgba(255,200,60,.18);color:#ffd36b;padding:1px 6px;border-radius:4px}
+.legal__scroll{overflow-x:auto;margin:8px 0 18px;border:1px solid var(--line);border-radius:10px}
+.legal__table{width:100%;border-collapse:collapse;min-width:520px}
+.legal__table th,.legal__table td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);color:var(--sub);font:400 14px/1.5 var(--f-body);vertical-align:top}
+.legal__table th{color:#fff;font-weight:600;background:rgba(255,255,255,.03)}
+.legal__table tr:last-child td{border-bottom:0}
+.legal__btn{background:none;border:1px solid var(--green);color:var(--green);font:600 14px var(--f-ui);padding:8px 16px;border-radius:100px;cursor:pointer}
+.legal__btn:hover{background:rgba(31,213,118,.12)}
+@media(max-width:760px){.legal{padding-top:56px}.legal h1{font-size:32px}}
+
+.cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:90;max-width:720px;margin-inline:auto;background:#0d1112;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:20px 22px;box-shadow:0 20px 60px rgba(0,0,0,.6);animation:rise .5s cubic-bezier(.2,.8,.2,1) both}
+.cookie[hidden]{display:none}
+.cookie h2{font:600 16px var(--f-head);color:var(--ink);margin-bottom:6px}
+.cookie p{color:var(--sub);font:400 14px/1.6 var(--f-body)}
+.cookie p a{color:var(--green);text-decoration:underline}
+.cookie__opts{display:grid;gap:10px;margin:14px 0 4px}
+.cookie__opts[hidden]{display:none}
+.cookie__opts label{display:flex;gap:10px;align-items:flex-start;color:var(--sub);font:400 13px/1.5 var(--f-body)}
+.cookie__opts input{accent-color:#1fd576;margin-top:3px;width:16px;height:16px}
+.cookie__opts b{color:#fff;font-weight:600}
+.cookie__actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.cookie__actions button{font:700 14px var(--f-body);padding:11px 20px;border-radius:100px;cursor:pointer;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;transition:.2s}
+.cookie__actions button:hover{border-color:#fff}
+.cookie__actions .is-primary{background:var(--green);border-color:var(--green);color:#050608}
+.cookie__actions .is-primary:hover{box-shadow:0 0 22px rgba(31,213,118,.45)}
+
+.e404{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;text-align:center;padding:48px 24px;background:radial-gradient(60% 50% at 50% 0,rgba(31,213,118,.16),transparent 70%)}
+.e404 h1{font:300 clamp(34px,6vw,64px)/1.1 var(--f-head);letter-spacing:-2px;color:var(--ink);max-width:14em}
+.e404 p{color:var(--sub);font:400 18px var(--f-body)}

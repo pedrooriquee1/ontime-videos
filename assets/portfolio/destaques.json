@@ -1,0 +1,82 @@
+[
+ {
+  "id": "destaque-01",
+  "client": "Bora Varejo",
+  "dur": 74
+ },
+ {
+  "id": "destaque-03",
+  "client": "Bora Varejo",
+  "dur": 94
+ },
+ {
+  "id": "destaque-05",
+  "client": "Bora Varejo",
+  "dur": 77
+ },
+ {
+  "id": "destaque-07",
+  "client": "Bora Varejo",
+  "dur": 78
+ },
+ {
+  "id": "destaque-08",
+  "client": "Fernando Miranda",
+  "dur": 57
+ },
+ {
+  "id": "destaque-12",
+  "client": "Fernando Miranda",
+  "dur": 143
+ },
+ {
+  "id": "destaque-13",
+  "client": "Fernando Miranda",
+  "dur": 38
+ },
+ {
+  "id": "destaque-14",
+  "client": "Fernando Miranda",
+  "dur": 90
+ },
+ {
+  "id": "destaque-33",
+  "client": "Alfredo Soares",
+  "dur": 38
+ },
+ {
+  "id": "destaque-19",
+  "client": "Alfredo Soares",
+  "dur": 54
+ },
+ {
+  "id": "destaque-20",
+  "client": "Alfredo Soares",
+  "dur": 91
+ },
+ {
+  "id": "destaque-22",
+  "client": "Alfredo Soares",
+  "dur": 39
+ },
+ {
+  "id": "destaque-34",
+  "client": "Alfredo Soares",
+  "dur": 117
+ },
+ {
+  "id": "destaque-30",
+  "client": "Nicolas Charão",
+  "dur": 9
+ },
+ {
+  "id": "destaque-31",
+  "client": "Nicolas Charão",
+  "dur": 89
+ },
+ {
+  "id": "destaque-32",
+  "client": "Nicolas Charão",
+  "dur": 107
+ }
+]

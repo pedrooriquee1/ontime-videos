@@ -1,0 +1,182 @@
+[
+ {
+  "id": "basico-01",
+  "level": "basico",
+  "src": "Cópia de VIDEO 1.mp4",
+  "dur": 25
+ },
+ {
+  "id": "basico-02",
+  "level": "basico",
+  "src": "Cópia de VIDEO 33.mp4",
+  "dur": 23
+ },
+ {
+  "id": "basico-03",
+  "level": "basico",
+  "src": "Cópia de VIDEO 4.mp4",
+  "dur": 32
+ },
+ {
+  "id": "basico-04",
+  "level": "basico",
+  "src": "Cópia de VIDEO 45.mp4",
+  "dur": 33
+ },
+ {
+  "id": "basico-05",
+  "level": "basico",
+  "src": "Cópia de VIDEO 6 cru.mp4",
+  "dur": 28
+ },
+ {
+  "id": "intermediario-01",
+  "level": "intermediario",
+  "src": "5 - Agosto.mp4",
+  "dur": 65
+ },
+ {
+  "id": "intermediario-02",
+  "level": "intermediario",
+  "src": "AS Digital.mp4",
+  "dur": 81
+ },
+ {
+  "id": "intermediario-03",
+  "level": "intermediario",
+  "src": "Ad Planning.mp4",
+  "dur": 136
+ },
+ {
+  "id": "intermediario-04",
+  "level": "intermediario",
+  "src": "Bruxa.mp4",
+  "dur": 31
+ },
+ {
+  "id": "intermediario-05",
+  "level": "intermediario",
+  "src": "CRIATIVO 10.mp4",
+  "dur": 31
+ },
+ {
+  "id": "intermediario-06",
+  "level": "intermediario",
+  "src": "CRIATIVO 6.mp4",
+  "dur": 37
+ },
+ {
+  "id": "intermediario-07",
+  "level": "intermediario",
+  "src": "Nicolas Charão.mp4",
+  "dur": 44
+ },
+ {
+  "id": "intermediario-08",
+  "level": "intermediario",
+  "src": "REELS 1 (cury).mp4",
+  "dur": 114
+ },
+ {
+  "id": "intermediario-09",
+  "level": "intermediario",
+  "src": "SIL0002.mp4",
+  "dur": 115
+ },
+ {
+  "id": "intermediario-10",
+  "level": "intermediario",
+  "src": "Solution Place.mp4",
+  "dur": 60
+ },
+ {
+  "id": "intermediario-11",
+  "level": "intermediario",
+  "src": "VÍDEO 1 - AGOSTO.mp4",
+  "dur": 134
+ },
+ {
+  "id": "intermediario-12",
+  "level": "intermediario",
+  "src": "VÍDEO 19 - DEZEMBRO - V2.mp4",
+  "dur": 23
+ },
+ {
+  "id": "intermediario-13",
+  "level": "intermediario",
+  "src": "VÍDEO 3 - SETEMBRO.mp4",
+  "dur": 92
+ },
+ {
+  "id": "intermediario-14",
+  "level": "intermediario",
+  "src": "Vídeo 7_1.mp4",
+  "dur": 96
+ },
+ {
+  "id": "avancado-01",
+  "level": "avancado",
+  "src": "Fernando Miranda.mp4",
+  "dur": 60
+ },
+ {
+  "id": "avancado-02",
+  "level": "avancado",
+  "src": "Vídeo 01.mp4",
+  "dur": 71
+ },
+ {
+  "id": "avancado-03",
+  "level": "avancado",
+  "src": "Sérgio.mp4",
+  "dur": 56
+ },
+ {
+  "id": "avancado-04",
+  "level": "avancado",
+  "src": "video 1.mp4",
+  "dur": 54
+ },
+ {
+  "id": "avancado-05",
+  "level": "avancado",
+  "src": "video 3.mp4",
+  "dur": 57
+ },
+ {
+  "id": "avancado-06",
+  "level": "avancado",
+  "src": "video 4.mp4",
+  "dur": 74
+ },
+ {
+  "id": "avancado-07",
+  "level": "avancado",
+  "src": "video 5.mp4",
+  "dur": 57
+ },
+ {
+  "id": "avancado-08",
+  "level": "avancado",
+  "src": "video 6.mp4",
+  "dur": 55
+ },
+ {
+  "id": "avancado-09",
+  "level": "avancado",
+  "src": "video 7.mp4",
+  "dur": 50
+ },
+ {
+  "id": "avancado-10",
+  "level": "avancado",
+  "src": "video 8.mp4",
+  "dur": 52
+ },
+ {
+  "id": "avancado-12",
+  "level": "avancado",
+  "src": "Vídeo 01.mp4",
+  "dur": 147
+ }
+]

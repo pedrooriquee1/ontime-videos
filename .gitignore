@@ -1,0 +1,5 @@
+OnTime Videos.zip
+*.zip
+.claude/
+Thumbs.db
+.DS_Store
