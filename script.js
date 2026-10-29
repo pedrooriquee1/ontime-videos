@@ -60,6 +60,8 @@ document.querySelectorAll('.hero__bg video').forEach((v) => {
 });
 document.querySelectorAll('.testi__list').forEach((list) => {
   const cols = [...list.children];
+  list.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; });
+  list.querySelectorAll('.reveal').forEach((f) => { f.classList.add('in'); io.unobserve(f); });
   const copy = () => cols.map((c) => {
     const n = c.cloneNode(true);
     n.setAttribute('aria-hidden', 'true');
