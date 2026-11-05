@@ -136,3 +136,43 @@ document.querySelectorAll('.pf-tabs').forEach((tabs) => {
   fromHash();
   addEventListener('hashchange', fromHash);
 });
+
+document.querySelectorAll('.brands__list').forEach((list) => {
+  const items = [...list.children];
+  const set = (hidden) => {
+    const s = document.createElement('div');
+    s.className = 'brands__set';
+    if (hidden) s.setAttribute('aria-hidden', 'true');
+    items.forEach((li) => {
+      const n = li.cloneNode(true);
+      n.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; if (hidden) i.alt = ''; });
+      s.append(n);
+    });
+    return s;
+  };
+  const track = document.createElement('div');
+  track.className = 'brands__track';
+  track.append(set(false), set(true));
+  list.replaceChildren(track);
+  list.classList.add('is-marquee');
+});
+
+document.querySelectorAll('.profs__list').forEach((list) => {
+  const items = [...list.children];
+  const set = (hidden) => {
+    const s = document.createElement('div');
+    s.className = 'profs__set';
+    if (hidden) s.setAttribute('aria-hidden', 'true');
+    for (let k = 0; k < Math.ceil(5 / items.length); k++) items.forEach((li) => {
+      const n = li.cloneNode(true);
+      n.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; if (hidden || k) i.alt = ''; });
+      s.append(n);
+    });
+    return s;
+  };
+  const track = document.createElement('div');
+  track.className = 'profs__track';
+  track.append(set(false), set(true));
+  list.replaceChildren(track);
+  list.classList.add('is-marquee');
+});
