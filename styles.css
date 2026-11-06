@@ -397,9 +397,7 @@ h2{font-family:var(--f-head)}
 .chain__arr svg{animation:nudge 1.8s ease-in-out infinite}
 @keyframes nudge{50%{transform:translateX(4px)}}
 @media(max-width:760px){
-  .hero__chain{flex-direction:column;gap:4px;margin-top:28px}
-  .chain__step{font-size:14px;padding:10px 18px}
-  .chain__arr svg{transform:rotate(90deg);animation:none}
+  .hero__chain{display:none}
 }
 @media(prefers-reduced-motion:reduce){.chain__step,.chain__arr svg{animation:none!important}}
 .hero{position:relative;isolation:isolate}
@@ -540,13 +538,13 @@ main{overflow-x:clip}
 .card--plan>.tag{display:inline-flex;align-items:center;gap:7px;color:#050607}
 .tag__star{flex-shrink:0}
 
-.brands{padding-top:100px;text-align:center}
+.brands{padding-top:70px;text-align:center}
 .brands h2{font:800 36px/1.1 var(--f-head)}
 .brands h2 .g{color:var(--green)}
 .brands .testi__sub{margin-bottom:36px}
 .brands__list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px 56px;max-width:1100px;margin-inline:auto}
 .brands__list.is-marquee{display:block;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.brands__track{display:flex;width:max-content;animation:fbscroll 45s linear infinite}
+.brands__track{display:flex;width:max-content;animation:fbscroll-r 45s linear infinite}
 .brands__list.is-marquee:hover .brands__track{animation-play-state:paused}
 .brands__set{display:flex;flex-shrink:0;align-items:center;gap:72px;padding-right:72px}
 .brands li{flex:0 0 auto;display:flex;align-items:center}
@@ -560,7 +558,7 @@ main{overflow-x:clip}
 .profs .testi__sub{margin-bottom:36px}
 .profs__list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1100px;margin-inline:auto}
 .profs__list.is-marquee{display:block;width:100vw;max-width:none;margin-inline:calc(50% - 50vw);overflow:hidden;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.profs__track{display:flex;width:max-content;animation:fbscroll-r 60s linear infinite}
+.profs__track{display:flex;width:max-content;animation:fbscroll 60s linear infinite}
 .profs__list.is-marquee:hover .profs__track{animation-play-state:paused}
 .profs__set{display:flex;flex-shrink:0;gap:20px;padding-right:20px}
 @keyframes fbscroll-r{from{transform:translateX(-50%)}to{transform:none}}
